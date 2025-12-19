@@ -1,0 +1,9 @@
+﻿@page "/cascading-parameters"
+@using AutoLot.Blazor.Shared.CascadingParameters
+<h3>Cascading Parameters</h3>
+<CascadingValue Value="FavoriteColor">
+    <Child></Child>
+</CascadingValue>
+@code {
+    private string FavoriteColor = "Blue";
+}

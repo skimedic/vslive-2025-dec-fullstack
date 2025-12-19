@@ -1,0 +1,7 @@
+﻿<h3>Grandchild</h3>
+<div>Your favorite color is @FavoriteColor</div>
+<div>Your least favorite color is @LeastFavoriteColor</div>
+@code {
+    [CascadingParameter] public string FavoriteColor { get; set; }
+    [CascadingParameter(Name = "LeastFavoriteColor")] public string LeastFavoriteColor { get; set; }
+}
